@@ -1,8 +1,10 @@
+
+
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "About", link: "#about",icon:'/about.png' },
+  { name: "Projects", link: "#projects",icon:'/project.png' },
+  { name: "Testimonials", link: "#testimonials",icon:'/testimon.png' },
+  { name: "Contact", link: "#contact",icon:'/contact.png' },
 ];
 
 export const gridItems = [
@@ -11,9 +13,9 @@ export const gridItems = [
     title: "I prioritize client collaboration, fostering open communication ",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
+    imgClassName: "",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "",
     spareImg: "",
   },
   {
@@ -72,35 +74,35 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
+    title: "Resto - Restaurant Management SYSTEM",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    img: "/resto.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://restobooking.rf.gd/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
+    title: "Cabinet - Doctor Appointment SYSTEM",
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    img: "/cabinet.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://cabinett.rf.gd/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
+    title: "Connect Courses - Online Students Courses Shop",
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    img: "/connect.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "https://assylchouikh.rf.gd",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
+    title: "CarDealer",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    img: "/car.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "https://cardealer.rf.gd",
   },
 ];
 
@@ -173,14 +175,14 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Full Stack JS Developer",
+    desc: "Assisted in the development of a web-based platform using Next.js or Angular, enhancing interactivity.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
+    title: "High Problem solving quality",
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
@@ -194,8 +196,8 @@ export const workExperience = [
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Backend Systems Builder",
+    desc: "Developed and maintained server-side features using modern backend technologies.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -205,13 +207,11 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    url: "https://github.com/assylk",
   },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    url: "https://www.linkedin.com/in/assyl-chouikh-b56988243/",
   },
 ];

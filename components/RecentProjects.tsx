@@ -4,7 +4,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
-
+import Image from "next/image";
 const RecentProjects = () => {
   return (
     <div className="py-20">
@@ -19,7 +19,7 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer
-              title="/ui.aceternity.com"
+              title={item.link}
               href="https://twitter.com/mannupaaji"
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
@@ -27,12 +27,14 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image src="/bg.png" alt="bgimg" width={220} height={220} />
                 </div>
-                <img
+                <Image
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  fill
+                 
+                  className="z-10 absolute bottom-0 rounded-lg"
                 />
               </div>
 
@@ -60,14 +62,14 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <Image src={icon} alt="icon5" className="p-2" width={220} height={220} />
                     </div>
                   ))}
                 </div>
 
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                    <a href={item.link} target="_blanck">Check Live Site</a>
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
