@@ -57,11 +57,10 @@ function ChatBot() {
                             <span className={styles.Ter_Blue}>~/Desktop/portfolio</span>
                             <span className={styles.Ter_Gray}>$</span>
                             <input autoFocus value={inputText}
-                                onChange={handleInputChange} type="text" max={20} className={styles.Ter_Input} />
+                                onChange={handleInputChange} type="text" maxLength={20} className={styles.Ter_Input} />
                             <div style={{ left: `10rem`, marginLeft: `${caretPosition * 12}px` }} className={styles.Blink}></div>
                         </div>
-                         <span className={styles.Ter_Gray}>{caretPosition}</span>
-                         <span className={styles.Ter_Gray}>{caretPosition* 7}</span>
+                         
                     </div>
                 </div>
             )}
