@@ -166,12 +166,82 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    z-index: 40;
+    z-index: 9999;
     position: fixed;
+    overflow: hidden;
+  }
+
+  .Blink{
+    left: 7rem;
   }
 }
 
+#Cur_Input_Line{
+    z-index: 999;
+    width: 100%;
+    height: 10%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#Cur_Input_Line .Ter_Input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: 12px; /* Adjust font size as needed */
+    caret-color: transparent; /* Change cursor color if needed */
+    margin-left: 5px; /* Adjust this value as needed */
+}
+.Blink {
+    position:absolute;
+    left:160px;
+    height: 12px;
+    width: 2px;
+    background-color: #fff;
+    opacity: 1;
+    z-index: 5;
+    animation: blink-animation 1s step-end infinite;
+}
+@keyframes blink-animation {
+    50% { opacity: 0; }
+}
+.Ter_Green{
+    color:#40E800;
+}
+.Ter_Gray{
+    color: rgb(167, 166, 166);
+}
+.Ter_Blue{
+    color:cyan
+}
 
+.Ter_Input{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Hasklig,Consolas,Menlo,Monaco,Liberation Mono,Courier New,monospace;
+    border: 1px solid red;
+    border-color: transparent;
+    width: 30px;
+    background: transparent;
+
+}
+
+.Ter_Input:focus{
+    color: #fff;
+    outline: none;
+
+    width: 75%;
+    caret-color: transparent;
+    
+}
+
+.Ter_Input{
+    width: 75%;
+}
 
 
 
