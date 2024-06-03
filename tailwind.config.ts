@@ -163,6 +163,7 @@ const config = {
     },
   },
   plugins: [
+        addVariablesForColors,
     require("tailwindcss-animate"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {

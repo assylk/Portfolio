@@ -42,26 +42,31 @@ function ChatBot() {
                         <div className={styles.ballvert}></div>
                     </div>
                     <div className="p-2">
-                        <p className={styles.texts}>$ Assyl.personal</p>
-                        <p className={styles.flesh}>&quot;Age 21. Sousse, Tunisia&quot;</p>
+                        <p className={isResied?styles.textResized:styles.texts}>$ Assyl.personal</p>
+                        <p className={isResied?styles.fleshResized:styles.flesh}>&quot;Age 21. Sousse, Tunisia&quot;</p>
 
-                        <p className={styles.texts}>$ Assyl.contact</p>
-                        <p className={styles.flesh}>[&quot;<a href="https://www.linkedin.com/in/assyl-chouikh-b56988243/" target='_blanck'>Linkedin</a>&quot;, &quot;<a href="https://github.com/assylk" target='_blanck'>Github</a>&quot;, &quot;<span onClick={emailHandler}>{Text}</span>&quot;]</p>
+                        <p className={isResied?styles.textResized:styles.texts}>$ Assyl.contact</p>
+                        <p className={isResied?styles.fleshResized:styles.flesh}>[&quot;<a href="https://www.linkedin.com/in/assyl-chouikh-b56988243/" target='_blanck'>Linkedin</a>&quot;, &quot;<a href="https://github.com/assylk" target='_blanck'>Github</a>&quot;, &quot;<span onClick={emailHandler}>{Text}</span>&quot;]</p>
 
-                        <p className={styles.texts}>$ Assyl.education</p>
-                        <p className={styles.flesh}>&quot;Institut Superieur des mathemathiques appliquées et Informatique,Kairouan&quot;</p >
-
-                        <div className='animate-pulse' id={styles.Cur_Input_Line}>
-                            <span className={styles.Ter_Green}>Me</span>
-                            <span className={styles.Ter_Gray}>:</span>
-                            <span className={styles.Ter_Blue}>~/Desktop/portfolio</span>
-                            <span className={styles.Ter_Gray}>$</span>
-                            <input autoFocus value={inputText}
-                                onChange={handleInputChange} type="text" maxLength={20} className={styles.Ter_Input} />
-                            <div style={{ left: `10rem`, marginLeft: `${caretPosition * 12}px` }} className={styles.Blink}></div>
+                        <p className={isResied?styles.textResized:styles.texts}>$ Assyl.education</p>
+                        <p className={isResied?styles.fleshResized:styles.flesh}>&quot;Institut Superieur des mathemathiques appliquées et Informatique,Kairouan&quot;</p >
+                        <ul className={isResied?styles.chatboxResize:styles.chatbox}>
+                            <li className={styles.chat} id={styles.incoming}>
+                                
+                                <p><span className={styles.Ter_red}>Assyl&apos;s Bot</span>
+                                <span className={styles.Ter_Gray}>:</span>
+                                <span className={styles.Ter_Blue}>~/Desktop/portfolio</span>
+                                    <span className={styles.Ter_Gray}>$</span>
+                                    Hi there ✋ Weekly Announcement for new updates 📣</p>
+                            </li>
+                        </ul>
+                        
                         </div>
-                         
-                    </div>
+                        
+
+
+
+                    
                 </div>
             )}
         </div>

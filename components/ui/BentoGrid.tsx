@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
+import Macbook from '../Macbook';
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 
@@ -133,6 +134,7 @@ export const BentoGridItem = ({
           >
             {title}
           </div>
+          {/* {id === 1 && <Macbook />} */}
           {id === 2 && <GridGlobe />}
 
           {id === 3 && (

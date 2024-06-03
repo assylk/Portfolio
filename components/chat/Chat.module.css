@@ -59,6 +59,16 @@
     margin-bottom: 8px;
     color: rgb(156 163 175 / var(--tw-text-opacity));
 }
+
+.textResized{
+    font-size: 10px;
+    line-height: 12px;
+    font-family: Hasklig,Consolas,Menlo,Monaco,Liberation Mono,Courier New,monospace;
+    --tw-text-opacity: 1;
+    margin-bottom: 5px;
+    color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 #flex{
     height: 20px;
     border-bottom: 1px solid rgba(148, 148, 148, 0.213);
@@ -115,7 +125,14 @@
 .ballyellow:hover::after,.ballrouge:hover::after {
   opacity: 1;
 }
-
+.fleshResized{
+    font-size: 10px;
+    line-height: 10px;
+    font-family: Hasklig,Consolas,Menlo,Monaco,Liberation Mono,Courier New,monospace;
+    margin-left: 12px;
+    color: #40E800;
+    margin-bottom: 3px;
+}
 .flesh {
     font-size: 12px;
     line-height: 16px;
@@ -170,79 +187,73 @@
     position: fixed;
     overflow: hidden;
   }
-
-  .Blink{
-    left: 7rem;
-  }
+  
+  
 }
 
-#Cur_Input_Line{
-    z-index: 999;
-    width: 100%;
-    height: 10%;
+
+
+
+
+
+.Ter_red{
+    color:#FF5F56;
     font-size: 12px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-#Cur_Input_Line .Ter_Input {
-    flex: 1;
-    border: none;
-    background: transparent;
-    color: inherit;
-    font-family: inherit;
-    font-size: 12px; /* Adjust font size as needed */
-    caret-color: transparent; /* Change cursor color if needed */
-    margin-left: 5px; /* Adjust this value as needed */
-}
-.Blink {
-    position:absolute;
-    left:160px;
-    height: 12px;
-    width: 2px;
-    background-color: #fff;
-    opacity: 1;
-    z-index: 5;
-    animation: blink-animation 1s step-end infinite;
-}
-@keyframes blink-animation {
-    50% { opacity: 0; }
-}
-.Ter_Green{
-    color:#40E800;
 }
 .Ter_Gray{
     color: rgb(167, 166, 166);
+        font-size: 12px;
+
 }
 .Ter_Blue{
-    color:cyan
+    color:cyan;
+        font-size: 12px;
 }
 
-.Ter_Input{
-    color: #fff;
+
+
+
+
+
+
+.chatbox{
+    height: 200px;
+    overflow-y: scroll;
+
+}
+
+
+.chatbox .chat{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+}
+.chatbox .chat .Ter_Gray{
+    margin-right: 6px;
+}
+
+.chatbox .chat p{ 
     font-size: 12px;
-    font-weight: 400;
-    font-family: Hasklig,Consolas,Menlo,Monaco,Liberation Mono,Courier New,monospace;
-    border: 1px solid red;
-    border-color: transparent;
-    width: 30px;
-    background: transparent;
-
+    color: #ffffff;
 }
 
-.Ter_Input:focus{
-    color: #fff;
-    outline: none;
 
-    width: 75%;
-    caret-color: transparent;
-    
+.chatboxResize{
+    height: 160px;
+    overflow-y: scroll;
 }
-
-.Ter_Input{
-    width: 75%;
+.chatboxResize .chat{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
 }
-
+.chatboxResize .chat .Ter_Gray{
+    margin-right: 6px;
+}
+.chatboxResize .chat p{
+    font-size: 12px;
+    color: #ffffff;
+}
 
 
 
