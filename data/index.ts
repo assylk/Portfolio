@@ -107,35 +107,41 @@ export const projects = [
 ];
 
 export const testimonials = [
-  {
+ /*  {
     quote:
       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
+  }, */
+  {
+    quote:
+      "Assyl sidi ou 3amti sahebtou",
+    name: "Hamdi Balghouthi",
+    title: "Chayech fi 9ahwet yassmine",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Andi faljaa da5el train bel 3ordh",
+    name: "Baananou Mohamed",
+    title: "AKA Jetable",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Assyl sidi ou 3amti sahebtou",
+    name: "Hamdi Balghouthi",
+    title: "Chayech fi 9ahwet yassmine",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Andi faljaa da5el train bel 3ordh",
+    name: "Baananou Mohamed",
+    title: "AKA Jetable",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Assyl sidi ou 3amti sahebtou",
+    name: "Hamdi Balghouthi",
+    title: "Chayech fi 9ahwet yassmine",
   },
 ];
 
