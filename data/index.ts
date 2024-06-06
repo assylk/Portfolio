@@ -1,10 +1,8 @@
-
-
 export const navItems = [
-  { name: "About", link: "#about",icon:'/about.png' },
-  { name: "Projects", link: "#projects",icon:'/project.png' },
-  { name: "Testimonials", link: "#testimonials",icon:'/testimon.png' },
-  { name: "Contact", link: "#contact",icon:'/contact.png' },
+  { name: "About", link: "#about", icon: "/about.png" },
+  { name: "Projects", link: "#projects", icon: "/project.png" },
+  { name: "Testimonials", link: "#testimonials", icon: "/testimon.png" },
+  { name: "Contact", link: "#contact", icon: "/contact.png" },
 ];
 
 export const gridItems = [
@@ -107,39 +105,34 @@ export const projects = [
 ];
 
 export const testimonials = [
- /*  {
+  /*  {
     quote:
       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   }, */
   {
-    quote:
-      "Assyl sidi ou 3amti sahebtou",
+    quote: "Assyl sidi ou 3amti sahebtou",
     name: "Hamdi Balghouthi",
     title: "Chayech fi 9ahwet yassmine",
   },
   {
-    quote:
-      "Andi faljaa da5el train bel 3ordh",
+    quote: "Andi faljaa da5el train bel 3ordh",
     name: "Baananou Mohamed",
     title: "AKA Jetable",
   },
   {
-    quote:
-      "Assyl sidi ou 3amti sahebtou",
+    quote: "Assyl sidi ou 3amti sahebtou",
     name: "Hamdi Balghouthi",
     title: "Chayech fi 9ahwet yassmine",
   },
   {
-    quote:
-      "Andi faljaa da5el train bel 3ordh",
+    quote: "Andi faljaa da5el train bel 3ordh",
     name: "Baananou Mohamed",
     title: "AKA Jetable",
   },
   {
-    quote:
-      "Assyl sidi ou 3amti sahebtou",
+    quote: "Assyl sidi ou 3amti sahebtou",
     name: "Hamdi Balghouthi",
     title: "Chayech fi 9ahwet yassmine",
   },
@@ -188,15 +181,15 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "High Problem solving quality",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Exceptional Problem-Solving Skills",
+    desc: "With exceptional analytical skills and a keen eye for detail, I excel in identifying and resolving complex issues efficiently.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
     title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    desc: "With a strong focus on collaboration and communication, I ensure each project is delivered on time and exceeds expectations. ",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
