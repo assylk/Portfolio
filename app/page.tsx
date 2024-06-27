@@ -9,6 +9,7 @@ import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Chat from "@/components/chat/Chat";
+import TestimonialForm from "@/components/Testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
          */}
         <Experience />
         <Approach />
+        <TestimonialForm />
         <Chat />
         <Footer />
       </div>
