@@ -8,7 +8,12 @@ const FormTestimonial = () => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const DOMAIN = "http://localhost:3000";
+  const PRODUCTION_DOMAIN = "https://assyl-chouikh.vercel.app/";
+  const DEVELOPMENT_DOMAIN = "http://localhost:3000";
+  const DOMAIN =
+    process.env.NODE_ENV === "production"
+      ? PRODUCTION_DOMAIN
+      : DEVELOPMENT_DOMAIN;
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
