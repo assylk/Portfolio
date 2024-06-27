@@ -4,6 +4,8 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Bounce, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -28,6 +30,19 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <ToastContainer
+            position="bottom-right"
+            autoClose={2000}
+            hideProgressBar
+            newestOnTop
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover={false}
+            theme="dark"
+            transition={Bounce}
+          />
           {children}
           <SpeedInsights />
         </ThemeProvider>
