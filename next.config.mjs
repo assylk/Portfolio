@@ -5,6 +5,7 @@ const nextConfig = {
     disableServerWebpackPlugin: true,
     disableClientWebpackPlugin: true,
   },
+  transpilePackages: ["@prisma/client"],
 };
 
 export default withSentryConfig(
