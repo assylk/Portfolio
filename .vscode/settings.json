@@ -10,5 +10,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "WillLuke.nextjs.hasPrompted": true
 }

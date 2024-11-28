@@ -40,71 +40,100 @@ const FormTestimonial = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="px-8 pt-6 pb-8 mb-4">
-      <div className="flex">
-        <div className="mb-4">
+    <form
+      onSubmit={handleSubmit}
+      className="w-full max-w-2xl mx-auto px-8 pt-6 pb-8 mb-4 bg-gray-900/50 backdrop-blur-sm rounded-xl shadow-xl border border-purple/30"
+    >
+      <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex-1">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-purple-300 text-sm font-medium mb-2"
             htmlFor="name"
           >
             Your Name
           </label>
-          <div
-            className="relative"
-            style={{
-              borderImage: "linear-gradient(to right, #252762, #8a80d7)",
-            }}
-          >
-            <input
-              className="shadow appearance-none w-full text-white px-3 py-2 border rounded-md leading-tight focus:outline-none focus:shadow-outline"
-              id="name"
-              type="text"
-              placeholder="Your Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
+          <input
+            className="w-full bg-gray-800/50 text-white px-4 py-3 rounded-lg border border-purple/30 
+                     focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 focus:outline-none
+                     transition-all duration-200 placeholder-gray-400"
+            id="name"
+            type="text"
+            placeholder="John Doe"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
         </div>
-        <div className="mb-4 ml-3">
+        <div className="flex-1">
           <label
-            className="block text-white text-sm font-bold mb-2"
+            className="block text-purple-300 text-sm font-medium mb-2"
             htmlFor="email"
           >
             Your Email
           </label>
           <input
-            className="px-3 py-2 border rounded-md shadow appearance-none w-full  text-white leading-tight focus:outline-none focus:shadow-outline"
+            className="w-full bg-gray-800/50 text-white px-4 py-3 rounded-lg border border-purple/30 
+                     focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 focus:outline-none
+                     transition-all duration-200 placeholder-gray-400"
             id="email"
             type="email"
-            placeholder="Your Email"
+            placeholder="john@example.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
       </div>
 
-      <div className="mb-6">
+      <div className="mt-6">
         <label
-          className="block text-gray-700 text-sm font-bold mb-2"
+          className="block text-purple-300 text-sm font-medium mb-2"
           htmlFor="testimonial"
         >
           Message
         </label>
         <textarea
-          className="resize-none shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+          className="w-full bg-gray-800/50 text-white px-4 py-3 rounded-lg border border-purple/30 
+                   focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 focus:outline-none
+                   transition-all duration-200 placeholder-gray-400 min-h-[120px]"
           id="message"
-          placeholder="Your Testimonial"
+          placeholder="Share your thoughts..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
       </div>
-      <div className="flex items-center justify-between">
+
+      <div className="mt-8">
         <button
           disabled={loading}
-          className=" bg-purple/80  text-white font-bold w-full py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="w-full bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900
+                   text-white font-medium py-3 px-6 rounded-lg transition-all duration-200
+                   disabled:opacity-50 disabled:cursor-not-allowed
+                   focus:ring-2 focus:ring-purple-500/20 focus:outline-none
+                   shadow-lg hover:shadow-purple-500/20"
           type="submit"
         >
-          {loading ? "Sending..." : "Send"}
+          {loading ? (
+            <span className="flex items-center justify-center gap-2">
+              <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  fill="none"
+                />
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                />
+              </svg>
+              Sending...
+            </span>
+          ) : (
+            "Send Message"
+          )}
         </button>
       </div>
     </form>
